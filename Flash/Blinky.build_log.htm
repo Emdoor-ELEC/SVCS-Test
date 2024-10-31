@@ -1,0 +1,122 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.40.0.0
+Copyright (C) 2024 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: chen mo, emdoor, LIC=1WSKC-7UISM-PHR89-4GLHX-ENB0Y-K7AVN
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.40.0.3
+Toolchain Path:  F:\Keil_MDK540\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.40.0.3
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.11.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\admin\Desktop\常用文档\预研类\SVCS\apnt_279\RTX_Blinky\Blinky.uvprojx
+Project File Date:  10/25/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'F:\Keil_MDK540\ARM\ARMCC\Bin'
+Rebuild target 'LPC1857 Flash'
+assembling startup_LPC18xx.s...
+compiling Blinky.c...
+compiling RTX_Conf_CM.c...
+compiling GPIO_LPC18xx.c...
+compiling LED_MCB1800.c...
+compiling SCU_LPC18xx.c...
+compiling system_LPC18xx.c...
+linking...
+Program Size: Code=10032 RO-data=1084 RW-data=88 ZI-data=4752  
+After Build - User command #1: F:\Keil_MDK540\\ARM\BIN\ElfDwT.exe .\Flash\Blinky.axf BASEADDRESS(0x1A000000)
+ELFDWT - Signature Creator V1.4.0.0
+COPYRIGHT Copyright (C) 2014-2018, ARM Ldt. and  ARM Germany GmbH
+*** Updated Signature over Range[32] (0x1A000000 - 0x1A000018): @0x1A00001C = 0x53FFAD46
+*** Processing completed, no Errors.
+".\Flash\Blinky.axf" - 0 Error(s), 0 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: RTOS Version: 1.0.0
+   * Component: CORE Version: 5.6.0
+   * Component: Keil RTX Version: 4.82.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.LPC1800_DFP.2.11.1.pack
+                Keil::LPC1800_DFP@2.11.1
+                NXP LPC1800 Series Device Support, Drivers and Examples
+   * Component: LED Version: 1.0.0
+   * Component: GPIO Version: 1.1.0
+   * Component: SCU Version: 1.1.0
+   * Component: Startup Version: 1.0.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.MDK-Middleware.7.16.0.pack
+                Keil::MDK-Middleware@7.16.0
+                Middleware for Keil MDK-Professional and MDK-Plus
+   * Component: LED Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/LPC1857
+  ./RTE/_LPC1857_Flash
+  F:/Keil_MDK539/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  F:/Keil_MDK539/Packs/ARM/CMSIS/5.9.0/CMSIS/RTOS/RTX/INC
+  F:/Keil_MDK539/Packs/Keil/LPC1800_DFP/2.11.1/Device/Include
+  F:/Keil_MDK539/Packs/Keil/LPC1800_DFP/2.11.1/RTE_Driver
+  F:/Keil_MDK539/Packs/Keil/MDK-Middleware/7.16.0/Board
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ::Board Support:LED(API)@1.0.0
+      Include file:  Board/Board_LED.h
+
+   * Component: ::CMSIS:RTOS(API)@1.0.0
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+
+   * Component: ARM::CMSIS:RTOS:Keil RTX@4.82.0
+      Source file:   CMSIS/RTOS/RTX/SRC/ARM/SVC_Table.s
+      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/Thread.c
+      Source file:   CMSIS/RTOS/RTX/Templates/RTX_Conf_CM.c
+      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/Mutex.c
+      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/main.c
+      Include file:  CMSIS/RTOS/RTX/INC/cmsis_os.h
+      Include file:  CMSIS/RTOS/RTX/UserCodeTemplates/osObjects.h
+      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/MailQueue.c
+      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/MsgQueue.c
+      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/MemPool.c
+      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/Semaphore.c
+      Source file:   CMSIS/RTOS/RTX/UserCodeTemplates/Timer.c
+      Library file:  CMSIS/RTOS/RTX/LIB/ARM/RTX_CM3.lib
+
+   * Component: Keil::Board Support&MCB1800:LED@1.0.0
+      Source file:   Boards/Keil/MCB1800/Common/LED_MCB1800.c
+
+   * Component: Keil::Device:GPIO@1.1.0
+      Source file:   RTE_Driver/GPIO_LPC18xx.c
+      Include file:  RTE_Driver/GPIO_LPC18xx.h
+
+   * Component: Keil::Device:SCU@1.1.0
+      Include file:  RTE_Driver/SCU_LPC18xx.h
+      Source file:   RTE_Driver/SCU_LPC18xx.c
+
+   * Component: Keil::Device:Startup@1.0.0
+      Source file:   Device/Source/ARM/startup_LPC18xx.s
+      Source file:   Device/Source/system_LPC18xx.c
+      Include file:  RTE_Driver/Config/RTE_Device.h
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
